@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Bora.Inventory.API/Bora.Inventory.API.csproj" />
+  <Project Path="Bora.Inventory.Application/Bora.Inventory.Application.csproj" />
+  <Project Path="Bora.Inventory.Domain/Bora.Inventory.Domain.csproj" />
+  <Project Path="Bora.Inventory.Infrastructure/Bora.Inventory.Infrastructure.csproj" />
+</Solution>
