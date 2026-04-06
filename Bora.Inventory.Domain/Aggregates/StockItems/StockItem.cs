@@ -8,17 +8,17 @@ public class StockItem : AggregateRoot<Guid>
 
     public string Name { get; private set; }
     public int Quantity { get; private set; }
-    
+
     #endregion
 
     #region Constructors
-    
-    public StockItem(Guid id, string name, int quantity)
+
+    public StockItem(Guid id, string name, int quantity) : base()
     {
         Id = id;
         Name = name;
         Quantity = quantity;
     }
-    
+
     #endregion
 }

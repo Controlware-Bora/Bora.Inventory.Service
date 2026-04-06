@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=42b578e6_002D8ead_002D44fc_002Da41c_002D36e52c0b04c9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestStringExtension" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F8BB98A6-B2F4-E3DE-27EA-92FE946A6D9B::net10.0::Bora.Inventory.Unit.Testing.Infrastructure.ExtensionTests.TestStringExtension&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba40451e_002D7311_002D44be_002D9a3b_002D6b1c34c6cb69/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestStringExtension #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F8BB98A6-B2F4-E3DE-27EA-92FE946A6D9B::net10.0::Bora.Inventory.Unit.Testing.Infrastructure.ExtensionTests.TestStringExtension&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -3,4 +3,5 @@
   <Project Path="Bora.Inventory.Application/Bora.Inventory.Application.csproj" />
   <Project Path="Bora.Inventory.Domain/Bora.Inventory.Domain.csproj" />
   <Project Path="Bora.Inventory.Infrastructure/Bora.Inventory.Infrastructure.csproj" />
+  <Project Path="Bora.Inventory.Unit.Testing/Bora.Inventory.Unit.Testing.csproj" />
 </Solution>
