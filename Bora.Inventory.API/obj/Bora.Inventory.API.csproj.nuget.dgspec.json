@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.API\\Bora.Inventory.API.csproj": {}
+    "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.API\\Bora.Inventory.API.csproj": {}
   },
   "projects": {
-    "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.API\\Bora.Inventory.API.csproj": {
+    "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.API\\Bora.Inventory.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.API\\Bora.Inventory.API.csproj",
+        "projectUniqueName": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.API\\Bora.Inventory.API.csproj",
         "projectName": "Bora.Inventory.API",
-        "projectPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.API\\Bora.Inventory.API.csproj",
-        "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.API\\obj\\",
+        "projectPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.API\\Bora.Inventory.API.csproj",
+        "packagesPath": "C:\\Users\\lgrau\\.nuget\\packages\\",
+        "outputPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lgrau\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj": {
-                "projectPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj"
+              "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj": {
+                "projectPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj"
               },
-              "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj": {
-                "projectPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj"
+              "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj": {
+                "projectPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj"
               }
             }
           }
@@ -59,6 +58,12 @@
           "targetAlias": "net10.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[10.0.5, )"
             }
@@ -500,20 +505,20 @@
         }
       }
     },
-    "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj": {
+    "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj",
+        "projectUniqueName": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj",
         "projectName": "Bora.Inventory.Application",
-        "projectPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj",
-        "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Application\\obj\\",
+        "projectPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj",
+        "packagesPath": "C:\\Users\\lgrau\\.nuget\\packages\\",
+        "outputPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lgrau\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -522,15 +527,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Domain\\Bora.Inventory.Domain.csproj": {
-                "projectPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Domain\\Bora.Inventory.Domain.csproj"
+              "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Domain\\Bora.Inventory.Domain.csproj": {
+                "projectPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Domain\\Bora.Inventory.Domain.csproj"
               }
             }
           }
@@ -854,20 +858,20 @@
         }
       }
     },
-    "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Domain\\Bora.Inventory.Domain.csproj": {
+    "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Domain\\Bora.Inventory.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Domain\\Bora.Inventory.Domain.csproj",
+        "projectUniqueName": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Domain\\Bora.Inventory.Domain.csproj",
         "projectName": "Bora.Inventory.Domain",
-        "projectPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Domain\\Bora.Inventory.Domain.csproj",
-        "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Domain\\obj\\",
+        "projectPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Domain\\Bora.Inventory.Domain.csproj",
+        "packagesPath": "C:\\Users\\lgrau\\.nuget\\packages\\",
+        "outputPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lgrau\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -876,7 +880,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1194,20 +1197,20 @@
         }
       }
     },
-    "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj": {
+    "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj",
         "projectName": "Bora.Inventory.Infrastructure",
-        "projectPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Infrastructure\\obj\\",
+        "projectPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\lgrau\\.nuget\\packages\\",
+        "outputPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lgrau\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1216,15 +1219,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj": {
-                "projectPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj"
+              "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj": {
+                "projectPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj"
               }
             }
           }
@@ -1252,6 +1254,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[10.0.1, )"
+            },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.23.26200, )"
             }
           },
           "imports": [

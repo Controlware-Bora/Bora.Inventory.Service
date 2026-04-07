@@ -11,8 +11,8 @@ public static class DependencyInjection
 {
     private static void ConnectDatabase(this IServiceCollection services, IConfiguration configuration)
     {
-        var connectionString = configuration.GetConnectionString("DefaultConnection");
-        services.AddDbContext<InventoryDbContext>(options => options.UseNpgsql(connectionString));
+        var connectionString = configuration.GetConnectionString("OracleDbConnecton");
+        services.AddDbContext<InventoryDbContext>(options => options.UseOracle(connectionString));
     }
 
     private static void AddScopedServices(this IServiceCollection services)

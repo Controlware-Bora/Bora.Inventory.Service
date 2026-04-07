@@ -1,4 +1,5 @@
 ﻿using Bora.Inventory.Domain.Aggregates.StockItems;
+using Bora.Inventory.Infrastructure.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Bora.Inventory.Infrastructure.Persistence.Context;
@@ -10,6 +11,7 @@ public class InventoryDbContext(DbContextOptions options) : DbContext(options)
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(InventoryDbContext).Assembly);
+        modelBuilder.ConvertAllToSnakeCase();
         base.OnModelCreating(modelBuilder);
     }
 }

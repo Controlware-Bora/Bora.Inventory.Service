@@ -8,7 +8,7 @@ public class StockItemConfiguration : IEntityTypeConfiguration<StockItem>
 {
     public void Configure(EntityTypeBuilder<StockItem> builder)
     {
-        builder.ToTable("StockItem");
+        builder.ToTable("StockItems");
         builder.HasKey(si => si.Id);
         builder.Property(si => si.Id).ValueGeneratedOnAdd().IsRequired();
         builder.Property(si => si.Quantity).IsRequired();

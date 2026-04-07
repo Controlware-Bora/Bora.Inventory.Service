@@ -10,3 +10,15 @@ D:\Job\Controlware\Github\Bora\Inventory.Service\Bora.Inventory.Domain\obj\Debug
 D:\Job\Controlware\Github\Bora\Inventory.Service\Bora.Inventory.Domain\obj\Debug\net10.0\refint\Bora.Inventory.Domain.dll
 D:\Job\Controlware\Github\Bora\Inventory.Service\Bora.Inventory.Domain\obj\Debug\net10.0\Bora.Inventory.Domain.pdb
 D:\Job\Controlware\Github\Bora\Inventory.Service\Bora.Inventory.Domain\obj\Debug\net10.0\ref\Bora.Inventory.Domain.dll
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Domain\bin\Debug\net10.0\Bora.Inventory.Domain.deps.json
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Domain\bin\Debug\net10.0\Bora.Inventory.Domain.dll
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Domain\bin\Debug\net10.0\Bora.Inventory.Domain.pdb
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Domain\obj\Debug\net10.0\Bora.Inventory.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Domain\obj\Debug\net10.0\Bora.Inventory.Domain.AssemblyInfoInputs.cache
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Domain\obj\Debug\net10.0\Bora.Inventory.Domain.AssemblyInfo.cs
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Domain\obj\Debug\net10.0\Bora.Inventory.Domain.csproj.CoreCompileInputs.cache
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Domain\obj\Debug\net10.0\Bora.Inventory.Domain.sourcelink.json
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Domain\obj\Debug\net10.0\Bora.Inventory.Domain.dll
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Domain\obj\Debug\net10.0\refint\Bora.Inventory.Domain.dll
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Domain\obj\Debug\net10.0\Bora.Inventory.Domain.pdb
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Domain\obj\Debug\net10.0\ref\Bora.Inventory.Domain.dll
