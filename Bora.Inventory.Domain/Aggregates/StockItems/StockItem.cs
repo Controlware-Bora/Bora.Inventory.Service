@@ -6,12 +6,16 @@ public class StockItem : AggregateRoot<Guid>
 {
     #region Attributes
 
-    public string Name { get; private set; }
+    public string Name { get; private set; } = null!;
     public int Quantity { get; private set; }
 
     #endregion
 
     #region Constructors
+
+    public StockItem()
+    {
+    }
 
     public StockItem(Guid id, string name, int quantity) : base()
     {

@@ -1,4 +1,7 @@
 using Bora.Inventory.API.Configuration;
+using Bora.Inventory.Infrastructure.Persistence.Context;
+using Bora.Inventory.Infrastructure.Seeding;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +15,13 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 builder.Services.AddApiServices(builder.Configuration);
 
 var app = builder.Build();
+
+await using (var scope = app.Services.CreateAsyncScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<InventoryDbContext>();
+    await context.Database.MigrateAsync();
+    await StockItemSeeding.SeedAsync(context);
+}
 
 // Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
