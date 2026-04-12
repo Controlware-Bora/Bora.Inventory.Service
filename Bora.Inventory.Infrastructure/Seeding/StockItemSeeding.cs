@@ -11,14 +11,18 @@ public static class StockItemSeeding
         var stockItems = new List<StockItem>([
             new StockItem {
                 Id =  Guid.NewGuid(),
+                Name = "Gol",
+                Quantity = 20
             },
             new StockItem
             {
                 Id =  Guid.NewGuid(),
+                Name = "Gol",
+                Quantity = 20
             }
         ]);
         
-        if (await context.StockItems.AnyAsync(cancellationToken))
+        if (await context.StockItems.CountAsync(cancellationToken: cancellationToken) > 0)
         {
             return;
         }

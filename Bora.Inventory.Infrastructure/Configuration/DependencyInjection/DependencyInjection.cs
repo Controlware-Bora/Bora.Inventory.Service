@@ -9,10 +9,27 @@ namespace Bora.Inventory.Infrastructure.Configuration.DependencyInjection;
 
 public static class DependencyInjection
 {
-    private static void ConnectDatabase(this IServiceCollection services, IConfiguration configuration)
+    private static void DynamicDatabaseConnection(this IServiceCollection services, IConfiguration configuration)
     {
-        var connectionString = configuration.GetConnectionString("OracleDbConnecton");
-        services.AddDbContext<InventoryDbContext>(options => options.UseOracle(connectionString));
+        var provider = Environment.GetEnvironmentVariable("DB_PROVIDER") ?? "";
+        switch (provider)
+        {
+            case "oracle": 
+                services.AddDbContext<InventoryDbContext>(options => options.UseOracle(configuration.GetConnectionString("OracleDbConnection")));
+                break;
+            case "postgres":
+                services.AddDbContext<InventoryDbContext>(options => options.UseNpgsql(configuration.GetConnectionString("PostgreDbConnection")));
+                break;
+            case "":
+                services.AddDbContext<InventoryDbContext>(options => options.UseOracle(configuration.GetConnectionString("OracleDbConnection")));
+                break;
+            default:
+                // By default, we use oracle connection.
+                services.AddDbContext<InventoryDbContext>(options => options.UseOracle(configuration.GetConnectionString("OracleDbConnection")));
+                break;
+        }
+        
+        
     }
 
     private static void AddScopedServices(this IServiceCollection services)
@@ -22,7 +39,7 @@ public static class DependencyInjection
 
     public static IServiceCollection AddInfrastructureLayer(this IServiceCollection services, IConfiguration configuration)
     {
-        services.ConnectDatabase(configuration);
+        services.DynamicDatabaseConnection(configuration);
         services.AddScopedServices();
         return services;
     }

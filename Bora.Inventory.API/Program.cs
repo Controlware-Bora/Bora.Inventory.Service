@@ -16,13 +16,6 @@ builder.Services.AddApiServices(builder.Configuration);
 
 var app = builder.Build();
 
-await using (var scope = app.Services.CreateAsyncScope())
-{
-    var context = scope.ServiceProvider.GetRequiredService<InventoryDbContext>();
-    await context.Database.MigrateAsync();
-    await StockItemSeeding.SeedAsync(context);
-}
-
 // Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
@@ -32,4 +25,5 @@ if (app.Environment.IsDevelopment())
 
 app.MapControllers();
 app.UseHttpsRedirection();
+app.BuildApp();
 app.Run();

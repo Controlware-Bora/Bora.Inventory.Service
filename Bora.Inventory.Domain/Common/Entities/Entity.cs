@@ -2,5 +2,5 @@
 
 public abstract class Entity<TKey>
 {
-    public required TKey Id { get; set; }
+    public required TKey Id { get; init; }
 }

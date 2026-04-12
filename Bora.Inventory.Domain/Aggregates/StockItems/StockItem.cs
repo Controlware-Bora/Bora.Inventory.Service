@@ -6,8 +6,8 @@ public class StockItem : AggregateRoot<Guid>
 {
     #region Attributes
 
-    public string Name { get; private set; } = null!;
-    public int Quantity { get; private set; }
+    public string Name { get; set; } = null!;
+    public int Quantity { get; set; }
 
     #endregion
 

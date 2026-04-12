@@ -9,13 +9,10 @@ public class InventoryDbContext(DbContextOptions options) : DbContext(options)
 {
     public DbSet<StockItem> StockItems => Set<StockItem>();
 
-    protected async override void OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(InventoryDbContext).Assembly);
         modelBuilder.ConvertAllToSnakeCase();
-
-        // Seeding
-        await StockItemSeeding.SeedAsync(this);
         base.OnModelCreating(modelBuilder);
     }
 }

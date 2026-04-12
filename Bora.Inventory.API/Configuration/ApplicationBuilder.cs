@@ -1,9 +1,15 @@
-﻿namespace Bora.Inventory.API.Configuration;
+﻿using Bora.Inventory.Infrastructure.Persistence.Context;
+using Bora.Inventory.Infrastructure.Seeding;
+
+namespace Bora.Inventory.API.Configuration;
 
 public static class ApplicationBuilder
 {
-    public static IServiceCollection BuildApi(this IServiceCollection services, IConfiguration configuration)
+    public static async void BuildApp(this WebApplication app)
     {
-        return services;
+        using var scope = app.Services.CreateScope();
+        var dbContext = scope.ServiceProvider.GetRequiredService<InventoryDbContext>();
+        
+        await StockItemSeeding.SeedAsync(dbContext);
     }
 }

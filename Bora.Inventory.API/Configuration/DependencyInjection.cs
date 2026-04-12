@@ -12,7 +12,6 @@ public static class DependencyInjection
 
         if (string.IsNullOrEmpty(autoMapperLicenseKey)) throw new Exception("There is no license key for automapper.");
         
-        
         return ApplicationOptions.Build(autoMapperLicenseKey);
     }
 

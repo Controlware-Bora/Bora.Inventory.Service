@@ -10,6 +10,26 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+    "http-oracle": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5256",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DB_PROVIDER": "oracle"
+      }
+    },
+    "http-pgsql": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5256",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DB_PROVIDER": "pgsql"
+      }
+    },
     "https": {
       "commandName": "Project",
       "dotnetRunMessages": true,
