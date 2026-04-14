@@ -1,12 +1,26 @@
 ﻿using Bora.Inventory.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 
 namespace Bora.Inventory.Infrastructure.Factory;
 
 // Works with migrations.
 public class InventoryDbContextFactory : IDesignTimeDbContextFactory<InventoryDbContext>
 {
+    private readonly IConfiguration _configuration;
+
+    public InventoryDbContextFactory(IConfiguration configuration)
+    {
+        // Initialize builder configuration. (We are recreating a new one for migrations"
+        _configuration = new ConfigurationBuilder()
+            .SetBasePath(Path.Combine("./Bora.Inventory.API"))
+            .AddJsonFile("appsettings.json", false)
+            .AddJsonFile($"appsettings.Development.json", true)
+            .AddEnvironmentVariables()
+            .Build();
+    }
+
     private bool ValidateArgumentPrefix(string arg, string prefix = "--")
     {
         return arg.Substring(0, 2) == prefix;
@@ -16,6 +30,7 @@ public class InventoryDbContextFactory : IDesignTimeDbContextFactory<InventoryDb
     private Dictionary<string, string?> ConvertToDictionaryArguments(string[] args)
     {
         Dictionary<string, string> dargs = new Dictionary<string, string>();
+
 
         int realArgsCount = args.Length - args.Length % 2;
 
@@ -33,31 +48,31 @@ public class InventoryDbContextFactory : IDesignTimeDbContextFactory<InventoryDb
     public InventoryDbContext CreateDbContext(string[] args)
     {
         var optionsBuilder = new DbContextOptionsBuilder<InventoryDbContext>();
-        
+
         Dictionary<string, string?> dargs = ConvertToDictionaryArguments(args);
+
+        var connectionString = _configuration.GetConnectionString("OracleDbConnection");
 
         if (dargs.TryGetValue("--db-provider", out string? dbProvider))
         {
             switch (dbProvider)
             {
                 case "oracle":
-                    optionsBuilder.UseOracle(
-                        "User Id=BORA_MAIN_DEV;Password=012205$Wirachain;Data Source=localhost:1521/XEPDB1");
+                    optionsBuilder.UseOracle(connectionString);
                     break;
                 case "postgre":
-                    optionsBuilder.UseNpgsql(
-                        "Host=localhost;Port=5432;Database=bora_inventory;Username=postgres;Password=012205;");
+                    connectionString = _configuration.GetConnectionString("PostgreDbConnection");
+                    optionsBuilder.UseNpgsql(connectionString);
                     break;
                 default:
-                    optionsBuilder.UseOracle(
-                        "User Id=BORA_MAIN_DEV;Password=012205$Wirachain;Data Source=localhost:1521/XEPDB1");
+                    optionsBuilder.UseOracle(connectionString);
                     break;
             }
         }
+
         InventoryDbContext dbContext = new InventoryDbContext(optionsBuilder.Options);
-        
-        
-        
+
+
         return dbContext;
     }
 }

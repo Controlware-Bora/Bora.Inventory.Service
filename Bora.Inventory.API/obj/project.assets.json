@@ -18,6 +18,19 @@
           }
         }
       },
+      "Bogus/35.6.5": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Bogus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Bogus.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -914,6 +927,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "Bogus": "35.6.5",
           "Bora.Inventory.Application": "1.0.0",
           "Microsoft.EntityFrameworkCore": "10.0.5",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1",
@@ -951,6 +965,27 @@
         "lib/net9.0/AutoMapper.xml",
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "Bogus/35.6.5": {
+      "sha512": "2FGZn+aAVHjmCgClgmGkTDBVZk0zkLvAKGaxEf5JL6b3i9JbHTE4wnuY4vHCuzlCmJdU6VZjgDfHwmYkQF8VAA==",
+      "type": "package",
+      "path": "bogus/35.6.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "bogus.128.png",
+        "bogus.35.6.5.nupkg.sha512",
+        "bogus.nuspec",
+        "lib/net40/Bogus.dll",
+        "lib/net40/Bogus.xml",
+        "lib/net6.0/Bogus.dll",
+        "lib/net6.0/Bogus.xml",
+        "lib/netstandard1.3/Bogus.dll",
+        "lib/netstandard1.3/Bogus.xml",
+        "lib/netstandard2.0/Bogus.dll",
+        "lib/netstandard2.0/Bogus.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -2817,23 +2852,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\leona\\.nuget\\packages\\": {},
+    "C:\\Users\\lgrau\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.API\\Bora.Inventory.API.csproj",
+      "projectUniqueName": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.API\\Bora.Inventory.API.csproj",
       "projectName": "Bora.Inventory.API",
-      "projectPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.API\\Bora.Inventory.API.csproj",
-      "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-      "outputPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.API\\obj\\",
+      "projectPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.API\\Bora.Inventory.API.csproj",
+      "packagesPath": "C:\\Users\\lgrau\\.nuget\\packages\\",
+      "outputPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lgrau\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2842,18 +2877,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj": {
-              "projectPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj"
+            "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj": {
+              "projectPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Application\\Bora.Inventory.Application.csproj"
             },
-            "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj": {
-              "projectPath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj"
+            "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj": {
+              "projectPath": "C:\\Job\\Github\\Iddle Time\\Bora.Inventory.Service\\Bora.Inventory.Infrastructure\\Bora.Inventory.Infrastructure.csproj"
             }
           }
         }
