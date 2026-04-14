@@ -29,7 +29,34 @@ public static class ModelBuilderExtensions
                 index.SetDatabaseName((index.GetDatabaseName() ?? string.Empty).ToSnakeCase());
             }
         }
+        return builder;
+    }
 
+    public static ModelBuilder ConvertAllToScreamingSnakeCase(this ModelBuilder builder)
+    {
+        foreach (var entity in builder.Model.GetEntityTypes())
+        {
+            entity.SetTableName((entity.GetTableName() ?? string.Empty).ToScreamingSnakeCase());
+            foreach (var property in entity.GetProperties())
+            {
+                property.SetColumnName(property.GetColumnName().ToScreamingSnakeCase());
+            }
+
+            foreach (var key in entity.GetKeys())
+            {
+                key.SetName((key.GetName() ?? string.Empty).ToScreamingSnakeCase());
+            }
+
+            foreach (var fKeys in entity.GetForeignKeys())
+            {
+                fKeys.SetConstraintName((fKeys.GetConstraintName() ?? string.Empty).ToScreamingSnakeCase());
+            }
+
+            foreach (var index in entity.GetIndexes())
+            {
+                index.SetDatabaseName((index.GetDatabaseName() ?? string.Empty).ToScreamingSnakeCase());
+            }
+        }
         return builder;
     }
 }

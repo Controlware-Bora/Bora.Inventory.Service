@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bora.Inventory.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27eaa8308b0119ff8e25ca7d093d67a3b7cdadde")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13f5502c7487bfe930bd95084e66998e97598e80")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bora.Inventory.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bora.Inventory.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

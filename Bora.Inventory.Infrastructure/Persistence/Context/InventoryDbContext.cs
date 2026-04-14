@@ -12,7 +12,11 @@ public class InventoryDbContext(DbContextOptions options) : DbContext(options)
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(InventoryDbContext).Assembly);
-        modelBuilder.ConvertAllToSnakeCase();
+
+        if (Database.IsOracle()) modelBuilder.ConvertAllToScreamingSnakeCase();
+        else if(Database.IsNpgsql()) modelBuilder.ConvertAllToSnakeCase();
+
+        // modelBuilder.ConvertAllToSnakeCase();
         base.OnModelCreating(modelBuilder);
     }
 }

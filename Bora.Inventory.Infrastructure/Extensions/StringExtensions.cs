@@ -15,6 +15,18 @@ public static class StringExtensions
         })).Substring(1);
     }
 
+    public static string ToScreamingSnakeCase(this string str)
+    {
+        if(string.IsNullOrEmpty(str))
+            return string.Empty;
+        return string.Concat(str.Select(c =>
+        {
+            if(char.IsUpper(c))
+                return $"_{c.ToString()}";
+            return char.ToUpper(c).ToString();
+        })).Substring(1);
+    }
+
     public static string ToSnakeCaseEnum(this string str)
     {
         IEnumerable<Char> Convert(IEnumerator<char> enumerator)

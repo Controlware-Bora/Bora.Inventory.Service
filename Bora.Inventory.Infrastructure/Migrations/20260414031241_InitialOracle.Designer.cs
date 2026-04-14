@@ -12,7 +12,7 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace Bora.Inventory.Infrastructure.Migrations
 {
     [DbContext(typeof(InventoryDbContext))]
-    [Migration("20260412051147_InitialOracle")]
+    [Migration("20260414031241_InitialOracle")]
     partial class InitialOracle
     {
         /// <inheritdoc />
@@ -30,22 +30,22 @@ namespace Bora.Inventory.Infrastructure.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("RAW(16)")
-                        .HasColumnName("id");
+                        .HasColumnName("ID");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("NVARCHAR2(50)")
-                        .HasColumnName("name");
+                        .HasColumnName("NAME");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("NUMBER(10)")
-                        .HasColumnName("quantity");
+                        .HasColumnName("QUANTITY");
 
                     b.HasKey("Id")
-                        .HasName("p_k_stock_items");
+                        .HasName("P_K__S_T_O_C_K__I_T_E_M_S");
 
-                    b.ToTable("stock_items", (string)null);
+                    b.ToTable("STOCK_ITEMS", (string)null);
                 });
 #pragma warning restore 612, 618
         }

@@ -12,16 +12,16 @@ namespace Bora.Inventory.Infrastructure.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "stock_items",
+                name: "STOCK_ITEMS",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "RAW(16)", nullable: false),
-                    name = table.Column<string>(type: "NVARCHAR2(50)", maxLength: 50, nullable: false),
-                    quantity = table.Column<int>(type: "NUMBER(10)", nullable: false)
+                    ID = table.Column<Guid>(type: "RAW(16)", nullable: false),
+                    NAME = table.Column<string>(type: "NVARCHAR2(50)", maxLength: 50, nullable: false),
+                    QUANTITY = table.Column<int>(type: "NUMBER(10)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("p_k_stock_items", x => x.id);
+                    table.PrimaryKey("P_K__S_T_O_C_K__I_T_E_M_S", x => x.ID);
                 });
         }
 
@@ -29,7 +29,7 @@ namespace Bora.Inventory.Infrastructure.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "stock_items");
+                name: "STOCK_ITEMS");
         }
     }
 }
