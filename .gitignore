@@ -1,0 +1,5 @@
+﻿# global .gitignore
+
+# Ignoring 
+bin/
+obj/

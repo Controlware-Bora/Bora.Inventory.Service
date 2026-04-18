@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "bJsBj2s8KjY=",
+  "dgSpecHash": "4o0T9mBn5Vg=",
   "success": true,
   "projectFilePath": "D:\\Job\\Controlware\\Github\\Bora\\Inventory.Service\\Bora.Inventory.Unit.Testing\\Bora.Inventory.Unit.Testing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leona\\.nuget\\packages\\automapper\\16.1.1\\automapper.16.1.1.nupkg.sha512",
+    "C:\\Users\\leona\\.nuget\\packages\\bogus\\35.6.5\\bogus.35.6.5.nupkg.sha512",
     "C:\\Users\\leona\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\leona\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",
     "C:\\Users\\leona\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.5\\microsoft.entityframeworkcore.10.0.5.nupkg.sha512",
