@@ -15,8 +15,7 @@ public class InventoryDbContext(DbContextOptions options) : DbContext(options)
 
         if (Database.IsOracle()) modelBuilder.ConvertAllToScreamingSnakeCase();
         else if(Database.IsNpgsql()) modelBuilder.ConvertAllToSnakeCase();
-
-        // modelBuilder.ConvertAllToSnakeCase();
+        
         base.OnModelCreating(modelBuilder);
     }
 }

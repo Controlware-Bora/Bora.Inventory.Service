@@ -12,7 +12,6 @@ public static class StockItemSeeding
     static StockItemSeeding()
     {
         Faker = new Faker<StockItem>()
-            .RuleFor(s => s.Id, f => Guid.NewGuid())
             .RuleFor(s => s.Name, f => f.Commerce.ProductName())
             .RuleFor(s => s.Quantity, f => f.Random.Number(1, 100));
         

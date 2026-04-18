@@ -319,3 +319,4 @@ D:\Job\Controlware\Github\Bora\Inventory.Service\Bora.Inventory.API\obj\Debug\ne
 D:\Job\Controlware\Github\Bora\Inventory.Service\Bora.Inventory.API\obj\Debug\net10.0\Bora.Inventory.API.pdb
 D:\Job\Controlware\Github\Bora\Inventory.Service\Bora.Inventory.API\obj\Debug\net10.0\Bora.Inventory.API.genruntimeconfig.cache
 D:\Job\Controlware\Github\Bora\Inventory.Service\Bora.Inventory.API\obj\Debug\net10.0\ref\Bora.Inventory.API.dll
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.API\bin\Debug\net10.0\Bogus.dll

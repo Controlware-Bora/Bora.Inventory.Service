@@ -10,11 +10,12 @@ public class InventoryDbContextFactory : IDesignTimeDbContextFactory<InventoryDb
 {
     private readonly IConfiguration _configuration;
 
-    public InventoryDbContextFactory(IConfiguration configuration)
+    public InventoryDbContextFactory()
     {
         // Initialize builder configuration. (We are recreating a new one for migrations"
+        Console.WriteLine(Path.Combine(Directory.GetCurrentDirectory(), "Bora.Inventory.API"));
         _configuration = new ConfigurationBuilder()
-            .SetBasePath(Path.Combine("./Bora.Inventory.API"))
+            .SetBasePath(Path.Combine(Directory.GetCurrentDirectory()))
             .AddJsonFile("appsettings.json", false)
             .AddJsonFile($"appsettings.Development.json", true)
             .AddEnvironmentVariables()

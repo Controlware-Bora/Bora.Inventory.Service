@@ -36,3 +36,5 @@ D:\Job\Controlware\Github\Bora\Inventory.Service\Bora.Inventory.Infrastructure\o
 D:\Job\Controlware\Github\Bora\Inventory.Service\Bora.Inventory.Infrastructure\obj\Debug\net10.0\Bora.Inventory.Infrastructure.pdb
 D:\Job\Controlware\Github\Bora\Inventory.Service\Bora.Inventory.Infrastructure\obj\Debug\net10.0\Bora.Inventory.Infrastructure.genruntimeconfig.cache
 D:\Job\Controlware\Github\Bora\Inventory.Service\Bora.Inventory.Infrastructure\obj\Debug\net10.0\ref\Bora.Inventory.Infrastructure.dll
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Infrastructure\bin\Debug\net10.0\Bora.Inventory.Infrastructure.runtimeconfig.json
+C:\Job\Github\Iddle Time\Bora.Inventory.Service\Bora.Inventory.Infrastructure\obj\Debug\net10.0\Bora.Inventory.Infrastructure.genruntimeconfig.cache
