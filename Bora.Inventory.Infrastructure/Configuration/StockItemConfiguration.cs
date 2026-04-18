@@ -1,6 +1,7 @@
 ﻿using Bora.Inventory.Domain.Aggregates.StockItems;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Bora.Inventory.Infrastructure.Configuration;
 
@@ -10,7 +11,9 @@ public class StockItemConfiguration : IEntityTypeConfiguration<StockItem>
     {
         builder.ToTable("StockItems");
         builder.HasKey(si => si.Id);
-        builder.Property(si => si.Id).ValueGeneratedOnAdd().IsRequired();
+        builder.Property(si => si.Id)
+            .ValueGeneratedOnAdd()
+            .IsRequired();
         builder.Property(si => si.Quantity).IsRequired();
         builder.Property(si => si.Name).IsRequired().HasMaxLength(50);
     }
