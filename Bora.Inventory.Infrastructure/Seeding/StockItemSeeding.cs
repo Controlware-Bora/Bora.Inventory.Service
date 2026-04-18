@@ -22,9 +22,9 @@ public static class StockItemSeeding
     public static async Task SeedAsync(InventoryDbContext context, CancellationToken cancellationToken = default)
     {
         if(Faker == null) throw new InvalidOperationException("Seed is null");
-        
+
         var count = await context.StockItems.CountAsync(cancellationToken: cancellationToken);
-        Console.WriteLine($"There are already {count} items");
+        Console.WriteLine($"Seeding {count} items");
         if (count > 0)
             return;
         
