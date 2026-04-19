@@ -3,7 +3,7 @@ using Bora.Inventory.Domain.Aggregates.StockItems;
 
 namespace Bora.Inventory.Application.Repositories;
 
-public interface IStockItemRepository : IReadRepository<StockItem, Guid>
+public interface IStockItemRepository : IReadRepository<StockItem, Guid>, IWriteRepository<StockItem, Guid>
 {
     
 }

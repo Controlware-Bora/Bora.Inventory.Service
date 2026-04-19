@@ -17,11 +17,22 @@ public class StockItem : AggregateRoot<Guid>
     {
     }
 
-    public StockItem(Guid id, string name, int quantity) : base()
+    public StockItem(string name, int quantity) : base()
     {
-        Id = id;
+        Id = Guid.NewGuid();
         Name = name;
         Quantity = quantity;
+    }
+
+    #endregion
+
+
+    #region Domain Methods
+
+    public static StockItem Create(string name, int quantity)
+    {
+        var newId = Guid.NewGuid();
+        return new StockItem(name, quantity) { Id = newId };
     }
 
     #endregion

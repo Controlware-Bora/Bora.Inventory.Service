@@ -1,6 +1,6 @@
 ﻿namespace Bora.Inventory.Application.Common.CQRS;
 
-public interface ICommandHandler
+public interface ICommandHandler<TCommand, TResult> where TCommand : ICommand
 {
-    Task HandleAsync(ICommand command); 
+    Task<TResult> HandleAsync(TCommand command); 
 }
